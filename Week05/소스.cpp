@@ -16,8 +16,7 @@ int main() {
 	}
 	int kid = 5000, adult = 10000, senier = 7000;
 	for (int i = 0; i < humans; i++) {
-		//cout << *(ages + i) << '\n';
-		age = *(ages + i);
+		age = ages[i];
 		if (age >= 65) {
 			totalPrice = totalPrice + senier;
 		}
