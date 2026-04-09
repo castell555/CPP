@@ -1,5 +1,6 @@
 //stack memory : parameters, local variables
 //static(data) memory : global object, static object
+// heap memory : dynamic memory allocation (allocate at running time)
 
 #include <iostream>
 using namespace std;
@@ -66,6 +67,12 @@ void test() {
     Circle* circle7 = new Circle(circle6);
 
     cout << Circle::getCount() << "개\n";
+
+    cout << circle6.getCount() << "개\n";
+    //cout << circle7.getCount() << "개\n"; //error.circle7은 객체가 아닌 지역 포인트 변수
+    cout << (*circle7).getCount() << "개\n";
+    cout << circle7->getCount() << "개\n";
+
     delete circle7; //free heap memory
     cout << Circle::getCount() << "개\n";
 }
