@@ -69,14 +69,14 @@ Circle circle5;  // global object
 
 Circle* test() {
     Circle circle6(2.0);
-    Circle* circle7 = new Circle(circle6);
+    Circle* circle7 = new Circle(circle6); //allocate heap memory
 
     cout << Circle::getCount() << "개\n";
 
-    cout << circle6.getCount() << "개\n";
+    cout << circle6.getCount() << "\n";
     //cout << circle7.getCount() << "개\n"; //error.circle7은 객체가 아닌 지역 포인트 변수
-    cout << (*circle7).getCount() << "개\n";
-    cout << circle7->getCount() << "개\n";
+    cout << (*circle7).getCount() << "\n";
+    cout << circle7->getCount() << "\n";
 
     //delete circle7; //free heap memory
     cout << Circle::getCount() << "개\n";
