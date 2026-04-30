@@ -2,27 +2,14 @@
 #include<cstring>
 using namespace std;
 
-int myStrlen(const char* s) {
-	int count = 0;
-
-	while (s[count] != '\0') { //while(s[count] != 0 { //while(s[count] != NULL{
-		count++;
-	}
-	return count;
-}
-
 int main() {
-	char s1[] = "ACE"; // array compact initializer
-	const char* ps1 = "ACE~~~"; // string literal
-
-	cout << s1 << '\n';
-	cout << ps1 << '\n';
-	//cout << strlen(s1) << '\n';
-	cout << strlen(&s1[0]) << '\n';
-	cout << strlen(ps1) << '\n';
-	cout << myStrlen(&s1[0]) << '\n';
-	cout << myStrlen(s1) << '\n';
-	cout << myStrlen(ps1) << '\n';
+	char lines[80];
+	cout << "input : ";
+	cin.getline(lines, 80);
+	//cin >> lines; // adc zxy (엔터키가 구분자)
+	cout << endl;
+	cout << "Output: " << endl;
+	cout << lines << endl; //abc (스페이스바, 엔터키, 탭키는 모두 구분자
 
 	return 0;
 }
