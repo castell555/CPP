@@ -3,13 +3,13 @@
 using namespace std;
 
 int main() {
-	char lines[80];
-	cout << "input : ";
-	cin.getline(lines, 80);
-	//cin >> lines; // adc zxy (엔터키가 구분자)
-	cout << endl;
-	cout << "Output: " << endl;
-	cout << lines << endl; //abc (스페이스바, 엔터키, 탭키는 모두 구분자
+	char a[] = "ACE"; //ACB, ACZ
+	char b[] = "ACE";
+	string c = "ACE";
+	string d = "ACE";
+
+	cout << strcmp(a, b) << '\n'; // 0, -1, 1
+	cout << (c == d) << '\n';
 
 	return 0;
 }
