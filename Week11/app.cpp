@@ -15,8 +15,7 @@ void reverse(string& s)
 
 int main()
 {
-	string s1("abc");
-	string s2 = "abcd";
+	string s1("abc"); 	string s2 = "abcd";
 
 	getline(cin, s2);
 	//cin >> s2;
