@@ -7,6 +7,7 @@
 #include <string>
 using namespace std;
 
+//class Pokemon final // 상속 불가, final: 끊는 용
 class Pokemon
 {
 private:
