@@ -1,4 +1,8 @@
-#pragma once
+//#pragma once
+
+#ifndef POKEMON_H
+#define POKEMON_H
+
 #include <iostream>
 #include <string>
 using namespace std;
@@ -14,3 +18,5 @@ public:
     void set(int hp);
     int getHp() const;
 };
+
+#endif
