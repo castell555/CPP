@@ -1,5 +1,7 @@
+#include "pikachu.h"
+
 Pikachu::Pikachu() : Pokemon(), electricAttack(10) {  // Invocation
-}//pokemon.cpp
+}
 Pikachu::Pikachu(int hp, int electricAttack) : Pokemon(hp), electricAttack(electricAttack) {// Invocation
 }
 Pikachu::Pikachu(const Pikachu& pikachu) : Pokemon(pikachu), electricAttack(pikachu.electricAttack) {// Invocation
